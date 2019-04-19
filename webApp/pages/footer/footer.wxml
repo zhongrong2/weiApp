@@ -1,0 +1,19 @@
+<!--footer/footer.wxml-->
+  <view class="footer">
+    <navigator class='footer-nav' url='../index/index' hover-class='none' open-type='reLaunch'>
+      <image src='{{images.imgsrc1}}'></image>
+      <text>首页</text>
+    </navigator>
+    <view class='footer-nav' bindtap='scan' hover-class='none'>
+      <image src='{{images.imgsrc2}}'></image>
+      <text>加油</text>
+    </view>
+    <navigator class='footer-nav' url='../mall/mall' hover-class='none' open-type='reLaunch'>
+      <image src='{{images.imgsrc3}}'></image>
+      <text>商城</text>
+    </navigator>
+    <navigator class='footer-nav' url='../me/me' hover-class='none' open-type='reLaunch'>
+      <image src='{{images.imgsrc4}}'></image>
+      <text>我的</text>
+    </navigator>
+  </view>

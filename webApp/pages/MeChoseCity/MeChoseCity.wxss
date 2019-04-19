@@ -1,0 +1,144 @@
+/* pages/MeChoseCity/MeChoseCity.wxss */
+/* 搜索栏样式 */
+.search-bar {
+  width: 690rpx;
+  height: 76rpx;
+  background-color: #f2f2f2;
+  box-shadow: 0rpx 1rpx 6.09rpx 0.91rpx rgba(44, 46, 126, 0.3);
+  border-radius: 10rpx;
+  margin: 10rpx 30rpx;
+  float: left;
+}
+.search-bar input[type="text"] {
+  width: 80%;
+  height: 76rpx;
+  padding: 0rpx 26rpx;
+  border:none;
+  font-size: 28rpx;
+  color: #b2b2b2;
+  line-height: 76rpx;
+  float: left;
+}
+.search-bar image{
+  width: 32rpx;
+  height: 32rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-top: 24rpx;
+}
+.location {
+  width: 89.5%;
+  padding: 24rpx 40rpx;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  font-size: 30rpx;
+  color: #333333;
+  line-height: 32rpx;
+  float: left;
+}
+.location image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 10rpx;
+  float: left;
+}
+.location text{
+  float: left;
+}
+.locadata {
+  font-weight: bold;
+  margin-left: 10rpx;
+}
+/* 热门城市样式 */
+.hot-city {
+  width: 100%;
+  padding: 50rpx 0rpx 50rpx;
+  float: left;
+}
+.hot-city-title {
+  padding-left: 40rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+.hot-city-box {
+  padding-left: 40rpx;
+  margin-top: 30rpx;
+}
+.hot-city-text {
+  background-color: #f2f2f2;
+  padding: 18rpx 40rpx;
+  margin: 0rpx 38rpx 30rpx 0rpx;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  color: #333333;
+  line-height: 24rpx;
+  float: left;
+}
+.hotcityactive {
+  background-color: #ffffff;
+  border-color: #323482;
+  box-shadow:  0rpx 1rpx 6.09rpx 0.91rpx rgba(44, 46, 126, 0.3);
+  color: #323482;
+}
+/* 所有城市样式 */
+.city-list-box {
+  width: 694rpx;
+  padding: 10rpx 0rpx 50rpx;
+  margin: 0rpx 30rpx;
+  float: left;
+  position: relative;
+  top: 0rpx;
+  left: 0rpx;
+}
+.city-list-item{
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.city-letter {
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 10rpx;
+}
+.city-box {
+  width: 92%;
+  margin: 50rpx 30rpx 0rpx;
+  padding: 50rpx 0rpx -15rpx;
+}
+.city-name {
+  width: 25%;
+  font-size: 28rpx;
+  color: #4b4b4c;
+  padding: 0rpx 0rpx 65rpx 0rpx;
+  display: inline-block;
+  text-align: left;
+}
+.city-list-letter{
+  width: 28rpx;
+  position: absolute;
+  right: 11rpx;
+  top: -20rpx;
+}
+.city-letter-item {
+  width: 28rpx;
+  height: 28rpx;
+  display: block;
+  font-size: 24rpx;
+  color: #505050;
+  text-align: center;
+  line-height: 28rpx;
+  margin-bottom: 10rpx;
+}
+.letteractive {
+  padding: 2rpx;
+  background-color: #e5e5e5;
+  border-radius: 50%;
+}
+.topnav {
+  position: fixed;
+  top: 200rpx;
+  right: 41rpx;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

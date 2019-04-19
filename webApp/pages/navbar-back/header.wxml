@@ -1,0 +1,9 @@
+<!--pages/navbar/header.wxml-->
+<view class="navbar" style='height:{{navH}}px'>
+  <view class="navbar-action-wrap" bindtap="navBack">
+    <image class='back' src='../image/backinco.png'></image>
+  </view>
+  <view class='navbar-title'>
+    {{pageName}}
+  </view>
+</view>

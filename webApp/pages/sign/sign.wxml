@@ -1,0 +1,44 @@
+<!--pages/sign.wxml-->
+<view>
+  <view class='con'>
+    <view class='logo'>
+      <image src='../image/logo.png'></image>
+    </view>
+    <view class='sign'>
+      <form bindsubmit='formSubmit'>
+        <view class='section'>
+          <input type='number' name='phone' placeholder='手机' maxlength='11' bindinput='getPhone'></input>
+        </view>
+        <view class='section'>
+          <input type='number' name='code' placeholder='验证码' maxlength='6'></input>
+          <button class='getcode' bindtap='getCode' disabled='{{disabled}}' style='background-color: {{bgcolor}}'>{{text}}</button>
+        </view>
+        <view class='section selectbox'>
+          <!-- 下拉框 -->
+          <view class='select-list' bindtap='showMsg'>
+            <input name='carClass' placeholder='车辆类型' value='{{selectdata}}' disabled='true'></input>
+            <image src='../image/signselect.png'></image>
+          </view>
+          <!-- 下拉框显示的列表 -->
+          <view class="section-select" wx:if='{{select}}'>
+            <view class="select-one" bindtap='mySelect' data-name='私家车'>私家车</view>
+            <view class='select-one' bindtap='mySelect' data-name='滴滴'>滴滴</view>
+            <view class='select-one' bindtap='mySelect' data-name='出租'>出租</view>
+            <view class='select-one' bindtap='mySelect' data-name='大巴'>大巴</view>
+          </view>
+        </view>
+        <view class='section'>
+          <input name='carNumber' placeholder='车牌号' maxlength='7' value=''></input>
+        </view>
+        <view class='title'>
+          <checkbox checked='{{check}}' bindtap='check'></checkbox>
+          <text>我已阅读并同意</text>
+          <text class='proto'>《龙石化用户注册协议》</text>
+        </view>
+        <view class='btn-area'>
+          <button class='submit' form-type='submit'>提交</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

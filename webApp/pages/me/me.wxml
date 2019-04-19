@@ -1,0 +1,8 @@
+<view class='view-page'>
+  <navbar page-name="我的">我的</navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}rpx)'>
+    
+  </view>
+  
+  <include src='../footer/footer'/>
+</view>

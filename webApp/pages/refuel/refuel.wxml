@@ -1,0 +1,63 @@
+<!-- /pages/refuel/refuel -->
+<view class='view-page'>
+  <navbar page-name="支付订单">支付订单</navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}px)'>
+    <view class='conatiner'>
+      <!-- 加油站信息展示开始 -->
+      <view class='OilStationInfo'>
+        <view>
+          油站名称：
+          <text>{{staticname}}</text>
+        </view>
+        <view>
+          加油油品：
+          <text>{{oilclass}}</text>
+        </view>
+        <view>
+          加油金额：
+          <text>{{oilprice}}元</text>
+        </view>
+        <view>
+          加油数量：
+          <text>{{oilnumber}}L</text>
+        </view>
+      </view>
+      <!-- 加油站信息展示结束 -->
+      <!-- 优惠券开始 -->
+      <view class='coupon'>
+        <view class='coupontitle'>优惠券</view>
+        <view class='coupon-right'>
+          <text>可用优惠券{{couponNum}}</text>
+          <image src='../image/refuel/rightarr.png'></image>
+        </view>
+      </view>
+      <!-- 优惠券结束 -->
+      <!-- 支付金额开始 -->
+      <view class='payInfo'>
+        <view class='payInfo-border'></view>
+        <view class='payInfo-box'>
+          <view class='payInfo-box-item'>
+            应付：
+            <text></text>
+          </view>
+          <view class='payInfo-box-item'>
+            会员优惠：
+            <text></text>
+          </view>
+          <view class='payInfo-box-item'>
+            优惠券：
+            <text></text>
+          </view>
+          <view class='payInfo-box-total'></view>
+        </view>
+        <view class='payInfo-border'></view>
+      </view>
+      <!-- 支付金额结束 -->
+      <!-- 支付方式开始 -->
+      <!-- 支付方式结束 -->
+    </view>
+  </view>
+
+
+  <include src='../footer/footer'/>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/navbar/header.wxml-->
+<view class="navbar" style='height:{{navH}}px'>
+  <view class='navbar-title'>
+    {{pageName}}
+  </view>
+</view>

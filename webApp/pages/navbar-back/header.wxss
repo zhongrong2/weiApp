@@ -1,0 +1,37 @@
+/* pages/navbar/header.wxss */
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+}
+.navbar-title {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  color: #333;
+  font-size: 30rpx;
+}
+
+.navbar-action-wrap{
+  position: absolute;
+  left: 30rpx;
+  bottom: 15rpx;
+  z-index: 100;
+  line-height: 1;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.back {
+  width: 18rpx;
+  height: 32rpx;
+}

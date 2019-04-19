@@ -1,0 +1,100 @@
+<!--index.wxml-->
+<view class='view-page'>
+  <navbar page-name="龙石化">龙石化</navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}rpx)'>
+    <view class="container">
+      <!-- 头部定位开始 -->
+      <view class='header'>
+        <button class='location' bindtap='ChoseCity'>{{location}}</button>
+        <text class='locationTxt'>{{locationTxt}}</text>
+      </view>
+      <!-- 头部定位结束 -->
+      <!-- banner开始 -->
+      <view class='banner'>
+        <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duratioin}}' indicator-color='white' indicator-active-color='#2C2D80'>
+          <block wx:key="" wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src='{{item}}' class='slide-image'></image>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class='inform'>
+          <image src='../image/inform-icon.png'></image>
+          <swiper class='infor-list' vertical='true' autoplay='true' circular='true' interval='1000'>
+            <block wx:key="" wx:for="{{msgList}}">
+              <navigator url='' open-type='navigate'>
+                <swiper-item>
+                  <view class='swiper-item'>
+                    <text class='staitc'>{{item.static}}</text>
+                    <view class='priceBox'>
+                      <text>95号汽油 ￥{{item.price1}}</text>
+                      <text>92号汽油 ￥{{item.price2}}</text>
+                    </view>
+                  </view>
+                </swiper-item>
+              </navigator>
+            </block>
+          </swiper>
+        </view>
+      </view>
+      <!-- banner结束 -->
+      <view class='blank'></view>
+      <!-- 内容导航开始 -->
+      <view class='con-nav'>
+        <navigator class='con-nav-item' url='../index/index' hover-class='none' open-type='navigate'>
+          <image src='../image/con-nav1.png'></image>
+          <text>洗车服务</text>
+        </navigator>
+        <navigator class='con-nav-item' url='' hover-class='none' open-type='navigate'>
+          <image src='../image/con-nav2.png'></image>
+          <text>领券中心</text>
+        </navigator>
+        <navigator class='con-nav-item' url='' hover-class='none' open-type='navigate'>
+          <image src='../image/con-nav3.png'></image>
+          <text>附近油站</text>
+        </navigator>
+      </view>
+      <!-- 内容导航结束 -->
+      <!-- 内容banner开始 -->
+      <view class='con-banner'>
+        <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duratioin}}' indicator-color='white' indicator-active-color='#2C2D80'>
+          <block wx:key="" wx:for="{{imgUrls}}">
+            <swiper-item>
+              <image src='{{item}}' class='slide-image'></image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <!-- 内容banner结束 -->
+      <!-- 热卖商品开始 -->
+      <view class='best-sellers'>
+        <view class='best-sellers-title'>
+          <view class='sellers-title-left'>
+            <text>热卖商品</text>
+          </view>
+          <view class='sellers-title-right'>
+            <text>更多</text>
+            <image src='../image/rightJianTou.png'></image>
+          </view>
+        </view>
+        <view class='con-sellers'>
+          <view class='con-sellers-item' wx:key="" wx:for="{{selldata}}">
+            <image src='{{item.src}}'></image>
+            <view class='sellers-item-con'>
+              <text class='sell-title'>{{item.title}}</text>
+              <text class='sell-des'>{{item.des}}</text>
+              <view class='sell-prices'>
+                <text class='sell-price'>￥{{item.price}}</text>
+                <text class='sell-inte'>积分：{{item.inte}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 热卖商品结束 -->
+    </view>
+  </view>
+  
+  <include src='../footer/footer'/>
+</view>
+

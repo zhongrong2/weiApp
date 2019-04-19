@@ -1,0 +1,9 @@
+<!-- /pages/mall/mall.wxml -->
+<view class='view-page'>
+  <navbar page-name="商城">商城</navbar>
+  <view class='page-content' style='height:calc(100vh - {{navH}}rpx)'>
+    
+  </view>
+  
+  <include src='../footer/footer'/>
+</view>
